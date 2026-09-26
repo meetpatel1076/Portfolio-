@@ -37,25 +37,31 @@ const About = () => {
                     </div>
 
                     {/* Personality */}
+                    <a href="https://www.linkedin.com/in/meet-patel-3640b8234/">
+                               
+                          
                     <div className="rounded-sm border border-white/10 bg-white/[0.025] p-7 backdrop-blur-xs sm:p-8">
                         <p className="mb-8 font-mono text-xs uppercase tracking-[0.25em] text-white/40">
                             Profile
                         </p>
 
                         <div className="space-y-5">
-                            <div className="flex items-center gap-4">
-                                <img className='h-40 rounded-sm' src="/image2.png" alt="" />
-                                <div className='flex flex-col gap-6'>
-                                    <p className="font-medium text-xl">Meet Patel</p>
-                                    <p className="text-sm text-white/40">MERN Stack Developer | Turning ideas into products that solve real problems.</p>
-                                    <a className='flex items-center gap-2 text-white/40' href="https://www.linkedin.com/in/meet-patel-3640b8234/"><ExternalLink size={18} /><p>Linkdin</p></a>
-                                </div>
+                            
+                             <div className="flex items-center gap-4">
+                                    <img className='h-40 rounded-sm' src="/image2.png" alt="" />
+                                    <div className='flex flex-col gap-6'>
+                                        <p className="font-medium text-xl">Meet Patel</p>
+                                        <p className="text-sm text-white/40">MERN Stack Developer | Turning ideas into products that solve real problems.</p>
 
-                            </div>
+                                        <div className='flex items-center gap-2 text-white/40'><ExternalLink size={18} /><p>Linkdin</p></div>
+                                    </div>
+
+                                </div>
                         </div>
                     </div>
+                      </a>
                 </div>
-                
+
 
 
 
