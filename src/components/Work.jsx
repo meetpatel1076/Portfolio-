@@ -1,5 +1,6 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import MaskedHeading from "../animation/MaskedHeading";
 
 const projects = [
     {
@@ -98,6 +99,7 @@ const Work = () => {
                 {/* SECTION HEADER */}
                 <div className="mb-18">
 
+
                     <div className="mb-6 flex items-center gap-4">
                         <span className="font-mono text-sm text-amber-300">
                             02 /
@@ -109,12 +111,16 @@ const Work = () => {
                             Work
                         </span>
                     </div>
+                    <div className="hidden md:block" > <h2 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+                            My
+                            <span className="text-amber-300"> Projects / Products</span>
+                        </h2></div>
 
-                    <h2 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl">
-                        My
-                        <span className="text-amber-300"> Projects / Products</span>
-                    </h2>
-
+                    <div className="md:hidden "> 
+                        
+                        <MaskedHeading text="MY PROJECTS /PRODUCTS" src="image3.jpg" fillScale={1.25} parallax={26} drift={18} brightness={1} saturation={1} grayscale={false} reveal="rise" duration={1.1} stagger={0.09} align="left" weight={800} tracking={-0.04} lineHeight={0.95} textScale={0.11}
+                    />
+                    </div>
                 </div>
 
 

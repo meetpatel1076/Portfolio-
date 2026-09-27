@@ -27,7 +27,7 @@ const About = () => {
                     {/* Intro */}
                     <div>
 
-                        <MaskedHeading text="BUILD DIGITAL PRODUCTS." src="/image.jpg" fillScale={1.25} parallax={26} drift={18} brightness={1} saturation={1} grayscale={false} reveal="rise" duration={1.1} stagger={0.09} align="left" weight={800} tracking={-0.04} lineHeight={0.95} textScale={0.11}
+                        <MaskedHeading text="BUILD DIGITAL PRODUCTS."  src="/image.jpg" fillScale={1.25} parallax={26} drift={18} brightness={1} saturation={1} grayscale={false} reveal="rise" duration={1.1} stagger={0.09} align="left" weight={800} tracking={-0.04} lineHeight={0.95} textScale={0.11}
                         />
 
                         <p className="mt-10 max-w-2xl text-base leading-8 text-white/60 sm:text-lg">
