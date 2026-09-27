@@ -17,8 +17,8 @@ const Navbar = () => {
         sm:w-auto
         rounded-2xl
         border border-white/10
-        bg-[#0d0b12]/80
-        backdrop-blur-xl
+        bg-[#0d0b12]/55
+        backdrop-blur-xs
         px-1.5 py-1.5
         sm:px-2 sm:py-2
         shadow-[0_10px_40px_rgba(0,0,0,0.35)]

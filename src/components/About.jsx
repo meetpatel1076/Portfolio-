@@ -1,13 +1,14 @@
 import React from 'react'
 import MaskedHeading from '../animation/MaskedHeading'
 import { ExternalLink } from 'lucide-react';
+import TechJourney from './TechJourney';
 
 
 const About = () => {
     return (
         <section
             id="about"
-            className="relative min-h-screen w-full px-6 py-24 text-white sm:px-10 lg:px-20"
+            className="relative min-h-screen w-full px-6 py-19 text-white sm:px-10 lg:px-20"
         >
             <div className="mx-auto max-w-7xl">
 
@@ -49,7 +50,7 @@ const About = () => {
                             
                              <div className="flex items-center gap-4">
                                     <img className='h-40 rounded-sm' src="/image2.png" alt="" />
-                                    <div className='flex flex-col gap-6'>
+                                    <div className='flex flex-col gap-2 md:gap-4 lg:gap-6'>
                                         <p className="font-medium text-xl">Meet Patel</p>
                                         <p className="text-sm text-white/40">MERN Stack Developer | Turning ideas into products that solve real problems.</p>
 
@@ -64,7 +65,7 @@ const About = () => {
 
 
 
-
+<TechJourney/>
             </div>
         </section>
     )
