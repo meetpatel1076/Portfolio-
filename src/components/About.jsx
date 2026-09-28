@@ -41,7 +41,7 @@ const About = () => {
                     <a href="https://www.linkedin.com/in/meet-patel-3640b8234/">
                                
                           
-                    <div className="rounded-sm border border-white/10 bg-white/[0.025] p-7 backdrop-blur-xs sm:p-8">
+                    <div className="rounded-sm border border-white/10 bg-black/[0.35] p-7 backdrop-blur-xs sm:p-8">
                         <p className="mb-8 font-mono text-xs uppercase tracking-[0.25em] text-white/40">
                             Profile
                         </p>

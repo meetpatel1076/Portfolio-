@@ -92,8 +92,8 @@ const Work = () => {
     return (
         <section
             id="work"
-            className="relative w-full scroll-mt-24 px-4 
-             text-white sm:px-6 md:pb-12">
+            className="relative w-full scroll-mt-24 px-6 
+             text-white sm:px-6 md:pb-12 lg:px-20">
             <div className="mx-auto max-w-7xl">
 
                 {/* SECTION HEADER */}
