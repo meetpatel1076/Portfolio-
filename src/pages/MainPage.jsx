@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import About from '../components/About'
 import TechJourney from '../components/TechJourney'
 import Work from '../components/Work'
+import Contact from '../components/Contact'
 
 const MainPage = () => {
     return (
@@ -32,7 +33,7 @@ const MainPage = () => {
                 <Navbar/>
                 <About/>
                 <Work/>
-                
+                <Contact/>
 
 
             </div>

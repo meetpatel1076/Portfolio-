@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import MaskedHeading from "../animation/MaskedHeading";
-
+import { ExternalLink } from 'lucide-react';
 const projects = [
     {
         name: "thought",
@@ -13,12 +13,12 @@ const projects = [
         github: "https://github.com/meetpatel1076/Thought-",
     },
     {
-        name: "Nirikshak",
+        name: "Nirikshak (App)",
 
         description:
             "A legal metrology inspection platform that uses AI to analyze packaged commodity labels.",
         image: "nirikshak.png",
-        live: "#",
+        live: "https://nirikshakv1.vercel.app/",
         github: "https://github.com/meetpatel1076/SIH-2026",
     },
     {
@@ -112,14 +112,14 @@ const Work = () => {
                         </span>
                     </div>
                     <div className="hidden md:block" > <h2 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl">
-                            My
-                            <span className="text-amber-300"> Projects / Products</span>
-                        </h2></div>
+                        My
+                        <span className="text-amber-300"> Projects / Products</span>
+                    </h2></div>
 
-                    <div className="md:hidden "> 
-                        
+                    <div className="md:hidden ">
+
                         <MaskedHeading text="MY PROJECTS /PRODUCTS" src="image3.jpg" fillScale={1.25} parallax={26} drift={18} brightness={1} saturation={1} grayscale={false} reveal="rise" duration={1.1} stagger={0.09} align="left" weight={800} tracking={-0.04} lineHeight={0.95} textScale={0.11}
-                    />
+                        />
                     </div>
                 </div>
 
@@ -155,8 +155,7 @@ const Work = () => {
                 </div>
 
 
-                {/* PROJECT PREVIEW */}
-                {/* PROJECT SHOWCASE */}
+
                 <div
                     className="
         flex
@@ -203,7 +202,7 @@ const Work = () => {
 
 
                         {/* Image */}
-                        <div className="relative aspect-[16/9] overflow-hidden bg-zinc-900">
+                        <a href={project.live}> <div className="relative aspect-[16/9] overflow-hidden bg-zinc-900">
 
                             <img
                                 src={project.image}
@@ -219,7 +218,7 @@ const Work = () => {
                             {/* subtle overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
 
-                        </div>
+                        </div></a>
 
                     </div>
 
@@ -231,7 +230,7 @@ const Work = () => {
             flex
             flex-col
             
-            rounded-2xl
+          
             
             p-6
             sm:p-8
@@ -264,9 +263,9 @@ const Work = () => {
                                 target="_blank"
                                 rel="noreferrer"
                                 className="
-                    rounded-full
+                    rounded-sm
                     border
-                    border-white/10
+                    border-white/60
                     px-5
                     py-2.5
                     text-sm
@@ -275,7 +274,7 @@ const Work = () => {
                     
                 "
                             >
-                                Live Project ↗
+                                Live Project 
                             </a>
 
                             <a
@@ -283,7 +282,7 @@ const Work = () => {
                                 target="_blank"
                                 rel="noreferrer"
                                 className="
-                    rounded-full
+                    rounded-sm
                     bg-white
                     px-5
                     py-2.5
@@ -293,7 +292,7 @@ const Work = () => {
                     hover:bg-amber-300
                 "
                             >
-                                GitHub ↗
+                                Source Code
                             </a>
 
                         </div>
